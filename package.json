@@ -2,7 +2,7 @@
   "name": "axios-fetch-api",
   "version": "1.0.0",
   "description": "Npm package",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest src",
