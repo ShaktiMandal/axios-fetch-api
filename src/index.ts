@@ -1,1 +1,16 @@
-export const add = () => 3 + 3;
+import axios, { AxiosError, AxiosResponse } from "axios";
+const instance = axios.create();
+
+instance?.interceptors?.response.use(
+    (res: AxiosResponse) => res,
+    (err: AxiosError) => {
+      throw err;
+    }
+  );
+
+export const MakeAPiCall = async (url: string) => {
+return instance["get"](url).then((result: AxiosResponse) => {
+    const { data } = result;
+    return data;
+    });
+}
