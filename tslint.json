@@ -1,6 +1,7 @@
 {
     "rules": {
-        "no-string-literal": false
+        "no-string-literal": false,
+        "no-console": false
     },
     "extends": ["tslint:recommended", "tslint-config-prettier"]
  }
