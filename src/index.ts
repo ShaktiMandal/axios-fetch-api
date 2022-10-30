@@ -9,6 +9,7 @@ instance?.interceptors?.response.use(
   );
 
 export const MakeAPiCall = async (url: string) => {
+  console.log("Print the details");
 return instance["get"](url).then((result: AxiosResponse) => {
     const { data } = result;
     return data;
