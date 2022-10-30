@@ -1,4 +1,6 @@
-import axios, { AxiosError, AxiosResponse } from "axios";
+import { AxiosError, AxiosResponse } from "axios";
+
+const axios = require('axios');
 const instance = axios.create();
 
 instance?.interceptors?.response.use(
